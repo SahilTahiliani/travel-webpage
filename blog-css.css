@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(4.jpg) no-repeat;
+    background-position: center;
+    position: relative;
+}
+ul
+{
+    right: 0;
+    list-style-type: none;
+    margin-top: 25px;
+    position: fixed;
+}
+
+ul li
+{
+    display: inline-block;
+    margin-right: 6px;
+}
+nav{
+    z-index: 4;
+}
+
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 3px; /*to give curve to the border on all sides of the box*/
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+}
+
+ul li a:hover /*To set hover effect on nav bar items*/
+{
+    background-color: white;
+    color: black;
+    transition: .6s;
+}
+
+.logo img
+{
+    left: 0;
+    position: fixed;
+    width: 120px;
+    margin: -5px 25px; 
+}
+
+.bloggg
+{
+    background-color: white;
+    color: black;
+}
+.clouds
+{
+    width: 10px;
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+}
+
+/* Cloud animations */
+.clouds .a
+{
+    position: fixed;
+    width: 150px;
+    left: 300px;
+    top: 100px;
+    animation: animm1 linear infinite 40s;
+}
+.clouds .b
+{
+    position: fixed;
+    width: 220px;
+    left: 800px;
+    top: 100px;
+    animation: animm2 linear infinite 50s;
+}
+.clouds .c
+{
+    position: fixed;
+    width: 200px;
+    left: 1300px;
+    top: 00px;
+    animation: animm3 linear infinite 30s;
+}
+/* cloud keyframes below */
+
+@keyframes animm1 /*cloud 1 keyframes*/
+{
+    0%{
+        left: 1920px;
+    }
+    100%{
+        left: -1920px;
+    }
+}
+@keyframes animm2 /*cloud 2 keyframes*/
+{
+    0%{
+        left: 1920px;
+    }
+    100%{
+        left: -1920px;
+    }
+}
+@keyframes animm3 /*cloud 3 keyframes*/
+{
+    0%{
+        left: 1920px;
+    }
+    100%{
+        left: -1920px;
+    }
+}
+
+/* Mainpage text */
+.hold{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    z-index: 3;
+}
+.parent_class{
+    padding: 100px 150px;
+    margin-top: 170px;
+    margin-left: 150px;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    opacity: 40%;
+    z-index: 3;
+    border-radius: 5px;
+}
+.child_class h3{
+    font-size: 100px;
+}
+.child_class p{
+    font-size: 16px;
+}
